@@ -32,8 +32,6 @@ graph tesla_ai {
 }
 
 
-
-
 walker init {
     root {
         spawn here ++> graph::tesla_ai;
@@ -69,7 +67,7 @@ walker talk {
 
 
 
-node dialogue_state::cai_state {
+node dialogue_state:cai_state {
     can bi_enc.infer;
     can tfm_ner.extract_entity;
 
